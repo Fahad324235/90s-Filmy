@@ -388,7 +388,7 @@ function openOverlay(url) {
     setTimeout(() => {
         document.querySelector('.close-btn').style.display = 'block';
         document.querySelector('.close-btn').style.animation = 'showButton 1s forwards'; // Adjust animation timing if needed
-    }, 100); // 5 seconds delay
+    }, 5000); // 5 seconds delay
 }
 
 // Function to close the overlay
@@ -410,7 +410,7 @@ window.onload = function() {
     setTimeout(() => {
         const randomUrl = urls[Math.floor(Math.random() * urls.length)];
         openOverlay(randomUrl);
-    }, 1000); // Delay ko apni zarurat ke mutabiq adjust karen
+    }, 10000); // Delay ko apni zarurat ke mutabiq adjust karen
 };
   
   
